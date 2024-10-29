@@ -1,0 +1,6 @@
+.follow-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 340px;
+}
