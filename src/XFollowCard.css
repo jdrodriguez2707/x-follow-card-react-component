@@ -44,6 +44,7 @@
   border: 1px solid #7b7a7a;
   color: #fff;
   background-color: transparent;
+  width: 120px;
 
   &:hover {
     border-color: #ff0000;
