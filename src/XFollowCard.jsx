@@ -1,6 +1,13 @@
+import { useState } from "react";
 import "./XFollowCard.css";
 
-export function XFollowCard({ children, userName, isFollowing }) {
+export function XFollowCard({ children, userName, initialIsFollowing }) {
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
+
+  const handleClickFollowBtn = () => {
+    setIsFollowing((prevIsFollowing) => !prevIsFollowing);
+  }
+
   const isFollowingText = isFollowing ? "Following" : "Follow";
   const followBtnClassName = isFollowing
     ? "follow-card__follow-btn follow-card__follow-btn--is-following"
@@ -21,7 +28,7 @@ export function XFollowCard({ children, userName, isFollowing }) {
           <p className="follow-card__profile-username">@{userName}</p>
         </div>
       </div>
-      <button className={followBtnClassName}>
+      <button className={followBtnClassName} onClick={handleClickFollowBtn}>
         <span className="follow-card__follow-following-text">
           {isFollowingText}
         </span>
