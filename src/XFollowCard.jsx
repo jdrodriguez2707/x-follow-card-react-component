@@ -1,19 +1,19 @@
 import "./XFollowCard.css";
 
-export function XFollowCard() {
+export function XFollowCard({ children, userName, isFollowing }) {
   return (
     <article className="follow-card">
       <div className="follow-card__profile-info">
         <img
           className="follow-card__profile-image"
-          src="https://unavatar.io/youtube/icasadelrey"
-          alt="Casa del Rey"
+          src={`https://unavatar.io/youtube/${userName}`}
+          alt={children}
         />
         <div>
           <p className="follow-card__profile-name">
-            <strong>Casa del Rey</strong>
+            <strong>{children}</strong>
           </p>
-          <p className="follow-card__profile-username">@icasadelrey</p>
+          <p className="follow-card__profile-username">@{userName}</p>
         </div>
       </div>
       <button className="follow-card__follow-btn">
