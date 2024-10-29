@@ -40,6 +40,26 @@
   }
 }
 
+.follow-card__follow-btn--is-following {
+  border: 1px solid #7b7a7a;
+  color: #fff;
+  background-color: transparent;
+
+  &:hover {
+    border-color: #ff0000;
+    color: #ff0000;
+    background-color: #ff00000e;
+
+    .follow-card__follow-following-text {
+      display: none;
+    }
+
+    .follow-card__unfollow-text {
+      display: block;
+    }
+  }
+}
+
 .follow-card__unfollow-text {
   display: none;
 }

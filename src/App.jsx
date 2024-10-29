@@ -7,7 +7,7 @@ export function App() {
       <XFollowCard userName="icasadelrey" isFollowing>
         Casa del Rey
       </XFollowCard>
-      <XFollowCard userName="RokaStereoOficial" isFollowing>
+      <XFollowCard userName="RokaStereoOficial" isFollowing={false}>
         El Ministerio Roka
       </XFollowCard>
       <XFollowCard userName="NxtWaveBand" isFollowing>
