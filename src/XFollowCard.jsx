@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import "./XFollowCard.css";
 
 export function XFollowCard({ children, userName, initialIsFollowing }) {
@@ -6,7 +7,7 @@ export function XFollowCard({ children, userName, initialIsFollowing }) {
 
   const handleClickFollowBtn = () => {
     setIsFollowing((prevIsFollowing) => !prevIsFollowing);
-  }
+  };
 
   const isFollowingText = isFollowing ? "Following" : "Follow";
   const followBtnClassName = isFollowing
@@ -37,3 +38,9 @@ export function XFollowCard({ children, userName, initialIsFollowing }) {
     </article>
   );
 }
+
+XFollowCard.propTypes = {
+  children: PropTypes.node.isRequired,
+  userName: PropTypes.string.isRequired,
+  initialIsFollowing: PropTypes.bool.isRequired,
+};
