@@ -1,66 +1,66 @@
 .follow-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .follow-card__profile-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
 }
 
 .follow-card__profile-image {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
 }
 
 .follow-card__profile-name {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .follow-card__profile-username {
-  font-size: 1.4rem;
-  color: #7b7a7a;
+	font-size: 1.4rem;
+	color: #7b7a7a;
 }
 
 .follow-card__follow-btn {
-  border: none;
-  border-radius: 20px;
-  padding: 7px 24px;
-  font-size: 1.4rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+	border: none;
+	border-radius: 20px;
+	padding: 7px 24px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
 
-  &:hover {
-    color: #fff;
-    background-color: #09f;
-  }
+	&:hover {
+		color: #fff;
+		background-color: #09f;
+	}
 }
 
 .follow-card__follow-btn--is-following {
-  border: 1px solid #7b7a7a;
-  color: #fff;
-  background-color: transparent;
-  width: 120px;
+	border: 1px solid #7b7a7a;
+	color: #fff;
+	background-color: transparent;
+	width: 120px;
 
-  &:hover {
-    border-color: #ff0000;
-    color: #ff0000;
-    background-color: #ff00000e;
+	&:hover {
+		border-color: #ff0000;
+		color: #ff0000;
+		background-color: #ff00000e;
 
-    .follow-card__follow-following-text {
-      display: none;
-    }
+		.follow-card__follow-following-text {
+			display: none;
+		}
 
-    .follow-card__unfollow-text {
-      display: block;
-    }
-  }
+		.follow-card__unfollow-text {
+			display: block;
+		}
+	}
 }
 
 .follow-card__unfollow-text {
-  display: none;
+	display: none;
 }
