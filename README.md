@@ -1,8 +1,7 @@
-# React + Vite
+# X Follow Card Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a project of the [React course of midudev](https://cursoreact.dev) where I was able to learn and practice the basic concepts of React such as components, props, state, hooks, etc.
 
-Currently, two official plugins are available:
+![X follow card screenshot](<src/assets/Screenshot 2024-10-30 161912.png>)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Course repository](https://github.com/midudev/aprendiendo-react)
